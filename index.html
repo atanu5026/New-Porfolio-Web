@@ -6,8 +6,10 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Atanu's Portfolio</title>
 </head>
 <body>
@@ -19,13 +21,20 @@
                 </div>
             </section>
             <section class="RightSection">
-                <ul>
+                <ul class="navMenu">
                     <a class="navTools" href="/"><li>Home</li></a>
-                    <a class="navTools" href="/"><li>About</li></a>
-                    <a class="navTools" href="/"><li>Experience</li></a>
+                    <a class="navTools" href="#aboutheadid"><li>About</li></a>
+                    <a class="navTools" href="#experienceheadid"><li>Experience</li></a>
                     <a class="navTools" href="/"><li>Projects</li></a>
-                    <a class="navTools" href="/"><li>Contact</li></a>
+                    <a class="navTools" href="/"><li>Resources</li></a>
+                    <a class="navTools" href="https://www.youtube.com/@NOVOgaming-q8w"><li>Youtube</li></a>
+                    <a class="navTools" href="#contatcheadid"><li>Contact</li></a>
                 </ul>
+                <div id="menu" onclick="onClickMenu()">
+                    <span class="bar" id="bar1"></span>
+                    <span class="bar" id="bar2"></span>
+                    <span class="bar" id="bar3"></span>
+                </div>
             </section>
         </nav>
     </header>
@@ -35,16 +44,250 @@
                 <div class="textLeft">Hi, I am <span id="Atanu">Atanu</span></div>
                 <div class="textLeft">a passionate </div>
                 <span class="autoType"></span>
+                <div class="buttonsForResume">
+                    
+                    <a class = "button123" href="resume_atanu.pdf">
+                        <img src="resume.png" alt="" id="resumeimg">Download Resume
+                    </a>
+                    <a class = "button123" href="https://github.com/atanu5026">
+                        <img src="github.png" alt="" id="githubimg">Visit Github
+                    </a>
+                </div>
             </div>
             <div class="right">
-                <img src="bg2.png" alt="developer_male">
+                <img src="bg23.png" alt="developer_male">
             </div>
         </section>
         <hr id="break1">
+        <div class="aboutcontaner1">
+            <div  id="aboutheadid" class="abouthead">About Me</div>
+        </div>
         <section class="section2">
-            
+            <div class="leftSection2">
+                <img class= "imgabout" src="bg about.png" alt="about">
+            </div>
+            <div class="rightSection2">
+                <p>I am a student of Techno Main Salt Lake, Kolkata, West Bengal. I am currently in B.Tech Electrical Engineering 6th Sem (3rd Year).</p>
+            </div>
+        </section>
+        <hr id="break2">
+        <div class="aboutcontaner1">
+            <div id="experienceheadid" class="experiencehead">Experience</div>
+        </div>
+        <section class="section3">
+            <!-- <div class="leftsection3">
+                <div class="leftsectionleftside3">
+                    <div id="htmlexp" class = "leftsectionexp1">
+                        <p>HTML</p>
+                    </div>
+                    <div id="cssexp" class = "leftsectionexp1">
+                        <p>CSS</p>
+                    </div>
+                    <div id="jsexp" class = "leftsectionexp1">
+                        <p>JAVA SCRIPT</p>
+                    </div>
+                    <div id="nodeexp" class = "leftsectionexp1">
+                        <p>NODE JS</p>
+                    </div>
+                    <div id="mongoexp" class = "leftsectionexp1">
+                        <p>MONGO DB</p>
+                    </div>
+                </div>
+                <div class="leftsectionrightside3">
+                    <div id="reactexp" class = "leftsectionexp1">
+                    <p>REACT JS</p>
+                    </div>
+                    <div id="expressexp" class = "leftsectionexp1">
+                        <p>EXPRESS JS</p>
+                    </div>
+                    <div id="pythonexp" class = "leftsectionexp1">
+                        <p>PYTHON</p>
+                    </div>
+                    <div id="datastructureexp" class = "leftsectionexp1">
+                        <p>DSA</p>
+                    </div>
+                    <div id="cexp" class = "leftsectionexp1">
+                    <p>C LANG</p>
+                    </div>
+                </div>
+            <div class="rightsection3">
+                <div id="exp1" class="rightsectionexp1">PHOTOSHOP</div>
+                <dix id="exp2" class="rightsectionexp1">ILLUSTRATOR</dix>
+                <div id="exp3" class="rightsectionexp1">PREMIER PRO</div>
+                <div id="exp4" class="rightsectionexp1">ADOBE XD</div>
+            </div> -->
+            <div class="wrapper">
+                <h3>My Skills</h3>
+                <div class="skills-wrapper">
+        
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+        
+        
+                    <div class="bar">
+                        <div class="info">
+                            <span>Css</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="tailwind-css"></span>
+                        </div>
+                    </div>
+        
+        
+                    <div class="bar">
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="javascript"></span>
+                        </div>
+                    </div>
+        
+                    <div class="bar">
+                        <div class="info">
+                            <span>React JS</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="react-js"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>NEXT JS</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="next-js"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Three JS</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="three-js"></span>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="bar">
+                        <div class="info">
+                            <span>Mongo DB</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="mongo-db"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>NODE JS</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="node-js"></span>
+                        </div>
+                    </div>   
+                    <div class="bar">
+                        <div class="info">
+                            <span>Express JS</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="express-js"></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>GIT</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="git"></span>
+                        </div>
+                    </div> 
+        
+                </div>
+            </div>
+        </section>
+        <section class="sub_sections2">
+            <div class="aboutcontaner1">
+                <div id="otherheadid" class="experiencehead">Other Services</div>
+            </div>            
+            <div class="serviceselectro1">
+                <div class="services_container1">
+                    <div class="container_s1">
+                        <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--value:70">Ps</div>
+                    </div>
+                    <div class="container_s2">
+                        <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="--value:60">Ai</div>
+                    </div>
+                    <div class="container_s3">
+                        <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--value:50">Pr</div>
+                    </div>
+                </div>
+                <div class="services_container2">
+                    <div class="container_s4">
+                        <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="--value:40">Xd</div>
+                    </div>
+                    <div class="container_s5">
+                        <div role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="--value:35">Figma</div>
+                    </div>
+                    <div class="container_s6">
+                        <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="--value:80">Af</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr id="break3">
+        <div class="aboutcontaner1">
+            <div id="contatcheadid" class="contatchead">Contact</div>
+        </div>        
+        <section class="section4">
+            <div class="form1">
+                <div class="form_container">
+                    <form class="form_index" onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                        <input type="email" id="email_user" placeholder="Email" required>
+                        <input type="text" id="ph_number" placeholder="Phone Number" required>
+                        <textarea id="message" cols="30" rows="5" required placeholder="How Can I Help You?"></textarea>
+                        <div class="buttonsubmit"><button type="submit">Send</button></div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="footer_of_the_website">
+        <div class="social">
+            <a href="https://www.instagram.com/_syntax.error.811_"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/atanu-ghosh-b29707116"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/hadhamsing.chawla"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/AtanuGhosh19010"><i class="fab fa-twitter"></i></a>
+        </div>
+        <ul class="list_1">
+            <li><a href="/">Home</a></li>
+            <li><a href="#aboutheadid">About</a></li>
+            <li><a href="#experienceheadid">Experience</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Resources</a></li>
+            <li><a href="https://www.youtube.com/@NOVOgaming-q8w">Youtube</a></li>
+            <li><a href="#contatcheadid">Contact</a></li>
+        </ul>
+        <p class="copyright">Atanu Ghosh @2025 <br>
+            <br>
+        Made With Love With HTML, CSS, JS</p>
+        
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".autoType", {
